@@ -15,7 +15,7 @@ public class Main {
         AllService allService = null;
 
         try {
-             allService = (AllService) Naming.lookup("rmi://DESKTOP-KITCULR:7102/allService");
+             allService = (AllService) Naming.lookup("rmi://DESKTOP-KITCULR:7101/allService");
             System.out.println("Successfully connected to RMI service: " + allService);
         } catch (Exception e) {
             System.err.println("Failed to connect to RMI service: " + e.getMessage());
